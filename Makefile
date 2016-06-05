@@ -1,7 +1,7 @@
 PROJECT = wss
 
 DEPS = cowboy lager
-dep_cowboy = https://github.com/extend/cowboy.git 0.9.0
+dep_cowboy = https://github.com/extend/cowboy.git
 dep_lager = https://github.com/basho/lager
 
 release: clean-release all projects
