@@ -1,5 +1,6 @@
 -module(db_highscore).
--compile(export_all).
+%-compile(export_all).
+-export([init/0]).
 -include_lib("stdlib/include/qlc.hrl").
 
 % We need to add the date somehow.
