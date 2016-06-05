@@ -5,7 +5,7 @@
 -export([init/1]).
 
 start_link() ->
-    supervisor:start_link({local, ?MODULE}, ?MODULE, []),
+    supervisor:start_link({local, ?MODULE}, ?MODULE, []).
 
 % Spawn our message_broadcast worker
 init([]) ->
