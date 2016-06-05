@@ -12,7 +12,13 @@ init() ->
     mnesia:create_table(userscore,
         [ {disc_copies, [node()] },
              {attributes,      
-                record_info(fields,userscore)} ]).
+                record_info(fields,userscore)} ]),
+    insert(66, "Lars", 0, "Now"),
+    select(66),
+    select_some("Lars"),
+    select_all(),
+    select_search(0).
+
  
 insert(Id, Uname, Score, Date) ->
     Fun = fun() ->
